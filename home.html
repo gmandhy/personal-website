@@ -23,12 +23,57 @@
             width:29%;
             float:left;
             border:3px solid orangered;
+            border-radius: 8px
         }
         div.mycontent div.experience {
             width:69.5%;
             float:left;
             border:3px solid orangered;
             margin-left: 10px;
+            border-radius: 8px
+        }
+
+        div.mycontent div.experience div.workexperience {
+            width: 90%;
+            overflow:auto;
+            margin: auto;
+            border: 2px solid orangered;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 8px;
+        }
+
+        div.mycontent div.experience div.workexperience h3 {
+            text-align:justify;    
+            color: orangered;            
+            font-size:40px;  
+            margin-top:5px;
+            margin-left:10px;
+        }
+
+   
+
+        div.mycontent div.experience div.workexperience:hover {
+            background-color: orangered;
+            color: white;
+            
+        }
+
+        div.mycontent div.experience div.workexperience:hover h3 {
+            color: white;
+        }
+
+        div.mycontent div.experience div.workexperience p {
+            text-align:justify;    
+            color: orangered;            
+            font-size:20px;  
+            margin-top:5px;
+            margin-left:10px;
+            margin-right: 10px;
+        }
+
+        div.mycontent div.experience div.workexperience:hover p {
+            color: white;
         }
 
         img {
@@ -66,6 +111,40 @@
         background-color: orangered;
         color: white;
         }
+
+        body {
+
+            margin: 0;
+
+            background-color: white;
+
+            background-image:
+
+                linear-gradient(#e8e8e8 1px, transparent 1px),
+
+                linear-gradient(90deg, #e8e8e8 1px, transparent 1px);
+
+            background-size: 40px 40px;
+
+            animation: moveGrid 2s linear infinite;
+
+        }
+
+        @keyframes moveGrid {
+
+            from {
+
+                background-position: 0 0;
+
+            }
+
+            to {
+
+                background-position: 0px 40px;
+
+            }
+
+}
 
       
 
@@ -132,7 +211,7 @@
             <li style="padding:10px;">All India Rank 55 in National Economics Olympiad</li>
             <li style="padding:10px;">USACO Gold Rank Holder</li>
             <li style="padding:10px;">Young Achiever's Award for Outstanding Community Service and Leadership</li>
-            <li>Computer Science Senior Subject Award</li>
+            <li style="padding:10px;">Computer Science Senior Subject Award</li>
 
 
         </ul>
@@ -141,11 +220,23 @@
 
     <div class="experience">
 
+        <h1 style="text-align: center;">Work Experience</h1>
 
+        <div class="workexperience"> 
+            <h3>// National University of Singapore</h3>
+            <p>Worked under the supervision of Professor Dr. Manoranjan Dash at the National University of Singapore on a customer churn prediction research project. Developed and compared multiple machine learning models, including Logistic Regression, Random Forest, XGBoost, and Neural Networks, to identify customers at risk of leaving. Designed a multi-class XGBoost model capable of classifying churn into four distinct causes with 63% classification accuracy, providing more actionable insights for customer retention strategies. Presented the project’s methodology and findings to university faculty.</p>
+        </div>
 
+        <div class="workexperience"> 
+            <h3>// Decoding the Ballot: Predicting Indian General Elections With Machine Learning</h3>
+            <p>Co-authored a peer-reviewed research paper investigating the use of supervised machine learning for predicting Indian general election outcomes. Built and evaluated more than eight machine learning models using constituency-level data from over 500 constituencies across multiple election cycles, leveraging the SHRUG and Lok Dhaba datasets. Managed extensive data preprocessing and feature engineering across socio-economic, environmental, and electoral variables while analyzing model performance under challenges such as class imbalance and long-term party dominance. The research was published in the International Journal of Advanced Research and on SSRN (Impact Factor: 7.003), DOI: 10.21474/IJAR01/19477.</p>
+        </div>
 
+        <div class="workexperience"> 
+            <h3>// Amazon Web Services Corporate Training</h3>
+            <p>Completed an industry-focused corporate training program in cloud-based artificial intelligence and machine learning using Amazon SageMaker. Designed and implemented prototype machine learning pipelines for image classification, natural language processing, and regression tasks using managed AWS services, gaining practical experience in deploying scalable AI workflows. Received a formal Letter of Recommendation from instructor M. Saifee in recognition of outstanding performance throughout the program.</p>
 
-    </div>
+        </div>
 </div>
 
 
