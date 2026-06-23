@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Resume</title>
@@ -12,6 +14,24 @@
         div.mycontainer div {
         width:50%;  
         float:left;
+        }
+
+        .contact-links {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .contact-links a {
+            font-size: 200px;    
+            color: #333;   
+            margin: 0 15px;    
+            transition: color 0.3s ease;
+            text-decoration: none; 
+        }
+
+
+
+        .contact-links a:hover {
+            color: orangered;
         }
 
         body {
@@ -69,5 +89,37 @@
         </h1>
     </div>
 </div>
+
+<h1 style="text-align: center; color: orangered;"><b>Contact Me!</b></h1>
+
+<div class="contact-links">
+    <!-- GitHub Logo -->
+    <a href="https://github.com/gmandhy" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <!-- LinkedIn Logo -->
+    <a href="https://www.linkedin.com/in/gaurav-mandhyan/" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <!-- Email Logo -->
+    <a href="mailto:gmandhya@purdue.edu" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+    <br>
+    <br><br>
+    <!-- Phone Logo -->
+    <a href="tel:+6106081962" aria-label="Phone">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+    <!-- Instagram Logo -->
+    <a href="https://www.instagram.com/gauravm.04/" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+</div>
+
+
 </body>
+
 </html>
