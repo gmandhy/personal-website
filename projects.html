@@ -47,6 +47,58 @@
                     }
 
         }
+
+
+        div.projectmain {
+            width:100%;
+            overflow:auto;
+            float:left;
+            margin-left: 10px;
+            border-radius: 8px
+        }
+
+        div.projectmain div.projects {
+            width: 90%;
+            overflow:auto;
+            margin: auto;
+            border: 2px solid orangered;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 8px;
+        }
+
+        div.projectmain div.projects h3 {
+            text-align:justify;    
+            color: orangered;            
+            font-size:40px;  
+            margin-top:5px;
+            margin-left:10px;
+        }
+
+   
+
+        div.projectmain div.projects:hover {
+            background-color: orangered;
+            color: white;
+            
+        }
+
+        div.projectmain div.projects:hover h3 {
+            color: white;
+        }
+
+        div.projectmain div.projects p {
+            text-align:justify;    
+            color: orangered;            
+            font-size:20px;  
+            margin-top:5px;
+            margin-left:10px;
+            margin-right: 10px;
+        }
+
+        div.projectmain div.projects:hover p {
+            color: white;
+        }
     </style>
 
 </head>
@@ -54,13 +106,13 @@
 
 <div class="mycontainer">
     <div>
-        <h1 style="text-align: left;">
+        <h1 style="text-align: center;">
             Gaurav Mandhyan
         </h1>
     </div>
     <div>
         <h1>
-        <nav style="text-align: right;">
+        <nav style="text-align: center;">
             <a href="home.html">Home</a> |
             <a href="projects.html">Projects</a> |
             <a href="contact.html">Contact</a>
@@ -68,6 +120,44 @@
         </nav>
         </h1>
     </div>
+</div>
+
+<div class="projectmain">
+
+    <a href="https://github.com/gmandhy/BoilerBookings" style="text-decoration: none; color: inherit;">
+    <div class="projects">
+        <h3>Fandango Clone</h3>
+        <p>Led a team of four in the design and development of a full-stack Java Swing movie ticketing application that replicated core functionality of commercial booking platforms. Architected and implemented the graphical user interface, business logic, and a custom object-serialization persistence layer using vanilla Java without external frameworks. Designed a reservation engine supporting real-time seat locking, multi-threaded client connections, conflict prevention, and a dynamic demand-based ticket pricing algorithm to ensure data consistency and scalability in a concurrent environment.</p>
+    </div> </a>
+
+    <a href="https://github.com/gmandhy/plagiarism-checker" style="text-decoration: none; color: inherit;">
+    <div class="projects">
+        <h3>Java NLP Similarity Engine</h3>
+        <p>Developed a Java-based natural language processing application for document similarity analysis using classical information retrieval techniques. Implemented k-shingle generation, TF–IDF vectorization, and multiple similarity metrics to compare long-form documents with high accuracy. Extended the system beyond document-level comparison by incorporating phrase-level similarity detection, generating an interactive HTML heatmap that localized overlapping content and provided an interpretable visualization of semantically similar text regions.</p>
+    </div>
+    </a>
+
+    <a href="https://github.com/gmandhy/nutrisync" style="text-decoration: none; color: inherit;">
+    <div class="projects">
+        <h3>NutriSync</h3>
+        <p>Developed NutriSync, a cross-platform fitness tracking application that enables users to log workouts, monitor long-term exercise progress, maintain workout streaks, and visualize performance through an interactive dashboard. Designed the application using an object-oriented architecture with reusable page components, asynchronous database operations, and a relational database schema implemented with Prisma ORM and SQLite to ensure scalable, type-safe data management. Implemented secure user authentication with BCrypt password hashing, a rule-based achievement engine that evaluates workout milestones and streaks in real time, and dynamic progress visualizations that provide personalized performance insights through responsive UI components. The application also incorporates comprehensive input validation, timezone-aware streak calculations, and asynchronous data loading to deliver a responsive and reliable user experience. </p>
+    </div>
+    </a>
+
+    <a href="https://github.com/gmandhy/pseudocodecompiler" style="text-decoration: none; color: inherit;">
+    <div class="projects">
+        <h3>Fuzzy Pseudocode Compiler</h3>
+        <p>Developed a deterministic compiler that translates human-readable pseudocode into executable Python through a complete compiler pipeline. Designed modules for lexical analysis, fuzzy pattern matching, parsing, Abstract Syntax Tree (AST) construction, and Python code generation, enabling flexible natural-language-inspired syntax while producing valid Python programs. Implemented support for variables, arithmetic expressions, conditionals, loops, and nested control structures, along with a command-line interface for compiling and executing pseudocode locally. The project explores compiler construction, programming language design, and deterministic parsing without relying on machine learning or external services. </p>
+    </div>
+    </a>
+
+    <a href="https://github.com/gmandhy/chess-webapp" style="text-decoration: none; color: inherit;">
+    <div class="projects">
+        <h3>Over-the-board chess engine</h3>
+        <p>Developed a client–server chess application that synchronizes game state between two connected clients for over-the-board multiplayer play. Built the underlying chess engine responsible for legal move generation, rule enforcement, turn management, and board synchronization, while also implementing a computer-controlled opponent for single-player gameplay.</p>
+    </div>
+    </a>
+    
 </div>
 </body>
 </html>
