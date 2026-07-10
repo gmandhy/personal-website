@@ -39,7 +39,8 @@
         div.mycontent div.experience div.workexperience h3 {
             text-align:justify;    
             color: orangered;            
-            font-size:40px;  
+            font-size:1.5rem;  
+            font-size:clamp(1.500rem, calc(1.300rem + 1vw), 2.500rem);
             margin-top:5px;
             margin-left:10px;
         }
@@ -59,7 +60,8 @@
         div.mycontent div.experience div.workexperience p {
             text-align:justify;    
             color: orangered;            
-            font-size:20px;  
+            font-size:1rem;
+            font-size:clamp(1.000rem, calc(0.950rem + 0.25vw), 1.250rem); 
             margin-top:5px;
             margin-left:10px;
             margin-right: 10px;
@@ -146,7 +148,8 @@
             margin-top: 50px;
         }
         .contact-links a {
-            font-size: 200px;    
+            font-size: 7.5rem;   
+            font-size: clamp(7.500rem, calc(6.500rem + 5vw), 12.500rem);
             color: #333;   
             margin: 0 15px;    
             transition: color 0.3s ease;
@@ -182,7 +185,8 @@
         div.projectmain div.projects h3 {
             text-align:justify;    
             color: orangered;            
-            font-size:40px;  
+            font-size:1.5rem;  
+            font-size:clamp(1.500rem, calc(1.300rem + 1vw), 2.500rem);
             margin-top:5px;
             margin-left:10px;
         }
@@ -202,7 +206,8 @@
         div.projectmain div.projects p {
             text-align:justify;    
             color: orangered;            
-            font-size:20px;  
+            font-size:1rem;
+            font-size:clamp(1.000rem, calc(0.950rem + 0.25vw), 1.250rem);  
             margin-top:5px;
             margin-left:10px;
             margin-right: 10px;
