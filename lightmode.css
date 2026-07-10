@@ -1,0 +1,216 @@
+        div.mycontainer {
+            width:100%;
+            overflow:auto;
+        }       
+        div.mycontainer div {
+        width:50%;  
+        float:left;
+        }
+
+        div.mycontent {
+            width:100%;
+            overflow:auto;
+        }
+
+        div.mycontent div.about {
+            width:29%;
+            float:left;
+            border:3px solid orangered;
+            border-radius: 8px
+        }
+        div.mycontent div.experience {
+            width:69.5%;
+            float:left;
+            border:3px solid orangered;
+            margin-left: 10px;
+            border-radius: 8px
+        }
+
+        div.mycontent div.experience div.workexperience {
+            width: 90%;
+            overflow:auto;
+            margin: auto;
+            border: 2px solid orangered;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 8px;
+        }
+
+        div.mycontent div.experience div.workexperience h3 {
+            text-align:justify;    
+            color: orangered;            
+            font-size:40px;  
+            margin-top:5px;
+            margin-left:10px;
+        }
+
+   
+
+        div.mycontent div.experience div.workexperience:hover {
+            background-color: orangered;
+            color: white;
+            
+        }
+
+        div.mycontent div.experience div.workexperience:hover h3 {
+            color: white;
+        }
+
+        div.mycontent div.experience div.workexperience p {
+            text-align:justify;    
+            color: orangered;            
+            font-size:20px;  
+            margin-top:5px;
+            margin-left:10px;
+            margin-right: 10px;
+        }
+
+        div.mycontent div.experience div.workexperience:hover p {
+            color: white;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-top: auto;
+            border: 2px solid orangered;
+            width: 50%; 
+            }
+        ul.techstack {
+                list-style-type: none;
+                margin: 30px;
+                padding: 0;
+                overflow: hidden;  
+                background-color: white;
+                border-radius: 8px;
+                justify-content: center;
+            }
+        li.techstack {
+                float: left;
+        display: block;
+        color: orangered;
+        text-align: center;
+        margin-right: 5px;
+        margin-bottom: 2px;
+        border-radius: 8px;
+        padding: 8px;
+        border: 1px solid orangered;
+        text-decoration: none;
+        }
+
+        li.techstack:hover {
+        background-color: orangered;
+        color: white;
+        }
+
+        body {
+
+            margin: 0;
+
+            background-color: white;
+
+            background-image:
+
+                linear-gradient(#e8e8e8 1px, transparent 1px),
+
+                linear-gradient(90deg, #e8e8e8 1px, transparent 1px);
+
+            background-size: 40px 40px;
+
+            animation: moveGrid 2s linear infinite;
+
+        }
+
+        @keyframes moveGrid {
+
+            from {
+
+                background-position: 0 0;
+
+            }
+
+            to {
+
+                background-position: 0px 40px;
+
+            }
+
+        }
+
+/* Contacts css */
+
+        .contact-links {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .contact-links a {
+            font-size: 200px;    
+            color: #333;   
+            margin: 0 15px;    
+            transition: color 0.3s ease;
+            text-decoration: none; 
+        }
+
+
+
+        .contact-links a:hover {
+            color: orangered;
+        }
+
+/* Projects css */
+
+        div.projectmain {
+            width:100%;
+            overflow:auto;
+            float:left;
+            margin-left: 10px;
+            border-radius: 8px
+        }
+
+        div.projectmain div.projects {
+            width: 90%;
+            overflow:auto;
+            margin: auto;
+            border: 2px solid orangered;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 8px;
+        }
+
+        div.projectmain div.projects h3 {
+            text-align:justify;    
+            color: orangered;            
+            font-size:40px;  
+            margin-top:5px;
+            margin-left:10px;
+        }
+
+   
+
+        div.projectmain div.projects:hover {
+            background-color: orangered;
+            color: white;
+            
+        }
+
+        div.projectmain div.projects:hover h3 {
+            color: white;
+        }
+
+        div.projectmain div.projects p {
+            text-align:justify;    
+            color: orangered;            
+            font-size:20px;  
+            margin-top:5px;
+            margin-left:10px;
+            margin-right: 10px;
+        }
+
+        div.projectmain div.projects:hover p {
+            color: white;
+        }
+
+      
+
