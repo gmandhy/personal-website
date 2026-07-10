@@ -1,0 +1,322 @@
+div.mycontainer {
+    width: 100%;
+    overflow: auto;
+}
+
+div.mycontainer div {
+    width: 50%;
+    float: left;
+}
+
+div.mycontent {
+    width: 100%;
+    overflow: auto;
+}
+
+div.mycontent div.about {
+    width: 29%;
+    float: left;
+    box-sizing: border-box;
+    border: 3px solid #ff6a00;
+    border-radius: 8px;
+}
+
+div.mycontent div.experience {
+    width: calc(
+        71% - clamp(0.375rem, calc(0.35rem + 0.125vw), 0.5rem)
+    );
+
+    float: left;
+    box-sizing: border-box;
+    border: 3px solid #ff6a00;
+
+    margin-left: clamp(
+        0.375rem,
+        calc(0.35rem + 0.125vw),
+        0.5rem
+    );
+
+    border-radius: 8px;
+}
+
+div.mycontent div.experience div.workexperience {
+    width: 90%;
+    overflow: auto;
+    margin: auto;
+    border: 2px solid #ff6a00;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+div.mycontent div.experience div.workexperience h3 {
+    text-align: justify;
+    color: #ff6a00;
+
+    font-size: 1.5rem;
+    font-size: clamp(
+        1.500rem,
+        calc(1.300rem + 1vw),
+        2.500rem
+    );
+
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+div.mycontent div.experience div.workexperience:hover {
+    background-color: #ff6a00;
+    color: #0a0a0a;
+}
+
+div.mycontent div.experience div.workexperience:hover h3 {
+    color: #0a0a0a;
+}
+
+div.mycontent div.experience div.workexperience p {
+    text-align: justify;
+    color: #ff6a00;
+
+    font-size: 1rem;
+    font-size: clamp(
+        1.000rem,
+        calc(0.950rem + 0.25vw),
+        1.250rem
+    );
+
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.mycontent div.experience div.workexperience:hover p {
+    color: #0a0a0a;
+}
+
+img {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+
+    border: 3px solid #ff6a00;
+
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 50%;
+}
+
+ul.techstack {
+    list-style-type: none;
+
+    margin: 30px;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 8px;
+
+    background-color: transparent;
+
+    border-radius: 8px;
+}
+
+li.techstack {
+    color: #ff6a00;
+
+    text-align: center;
+
+    padding: 8px;
+
+    border: 1px solid #ff6a00;
+    border-radius: 8px;
+
+    text-decoration: none;
+}
+
+li.techstack:hover {
+    background-color: #ff6a00;
+    color: #0a0a0a;
+}
+
+body {
+    margin: 0;
+
+    color: #f5f5f5;
+
+    background-color: #0a0a0a;
+
+    background-image:
+        linear-gradient(
+            #1f1f1f 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            #1f1f1f 1px,
+            transparent 1px
+        );
+
+    background-size: 40px 40px;
+
+    animation: moveGrid 2s linear infinite;
+}
+
+@keyframes moveGrid {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 40px;
+    }
+}
+
+
+/* Contacts CSS */
+
+.contact-links {
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+.contact-links a {
+    font-size: 7.5rem;
+
+    font-size: clamp(
+        7.500rem,
+        calc(6.500rem + 5vw),
+        12.500rem
+    );
+
+    color: #f5f5f5;
+
+    margin: 0 15px;
+
+    transition: color 0.3s ease;
+
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    color: #ff6a00;
+}
+
+
+/* Projects CSS */
+
+div.projectmain {
+    width: 100%;
+
+    overflow: auto;
+
+    float: left;
+
+    margin-left: 10px;
+
+    border-radius: 8px;
+}
+
+div.projectmain div.projects {
+    width: 90%;
+
+    overflow: auto;
+
+    margin: auto;
+
+    border: 2px solid #ff6a00;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    padding: 8px;
+}
+
+div.projectmain div.projects h3 {
+    text-align: justify;
+
+    color: #ff6a00;
+
+    font-size: 1.5rem;
+
+    font-size: clamp(
+        1.500rem,
+        calc(1.300rem + 1vw),
+        2.500rem
+    );
+
+    margin-top: 5px;
+
+    margin-left: 10px;
+}
+
+div.projectmain div.projects:hover {
+    background-color: #ff6a00;
+
+    color: #0a0a0a;
+}
+
+div.projectmain div.projects:hover h3 {
+    color: #0a0a0a;
+}
+
+div.projectmain div.projects p {
+    text-align: justify;
+
+    color: #ff6a00;
+
+    font-size: 1rem;
+
+    font-size: clamp(
+        1.000rem,
+        calc(0.950rem + 0.25vw),
+        1.250rem
+    );
+
+    margin-top: 5px;
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+}
+
+div.projectmain div.projects:hover p {
+    color: #0a0a0a;
+}
+
+h1 {
+    font-size: clamp(
+        1.5rem,
+        calc(1.4rem + 0.5vw),
+        2rem
+    );
+}
+
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 600px) {
+
+    div.mycontent div.about,
+    div.mycontent div.experience {
+        width: 100%;
+
+        float: none;
+
+        box-sizing: border-box;
+    }
+
+    div.mycontent div.experience {
+        margin-left: 0;
+
+        margin-top: 10px;
+    }
+}
