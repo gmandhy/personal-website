@@ -12,19 +12,39 @@
             overflow:auto;
         }
 
-        div.mycontent div.about {
-            width:29%;
-            float:left;
-            border:3px solid orangered;
-            border-radius: 8px
-        }
-        div.mycontent div.experience {
-            width:69.5%;
-            float:left;
-            border:3px solid orangered;
-            margin-left: 10px;
-            border-radius: 8px
-        }
+div.mycontent div.about {
+
+    width: 29%;
+
+    float: left;
+
+    box-sizing: border-box;
+
+    border: 3px solid orangered;
+
+    border-radius: 8px;
+
+}
+
+div.mycontent div.experience {
+
+    width: calc(
+
+        71% - clamp(0.375rem, calc(0.35rem + 0.125vw), 0.5rem)
+
+    );
+
+    float: left;
+
+    box-sizing: border-box;
+
+    border: 3px solid orangered;
+
+    margin-left: clamp(0.375rem, calc(0.35rem + 0.125vw), 0.5rem);
+
+    border-radius: 8px;
+
+    }
 
         div.mycontent div.experience div.workexperience {
             width: 90%;
@@ -77,29 +97,30 @@
             margin-right: auto;
             margin-bottom: auto;
             margin-top: auto;
-            border: 2px solid orangered;
+            border: 3px solid orangered;
             width: 50%; 
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
             }
         ul.techstack {
-                list-style-type: none;
-                margin: 30px;
-                padding: 0;
-                overflow: hidden;  
-                background-color: white;
-                border-radius: 8px;
-                justify-content: center;
-            }
+            list-style-type: none;
+            margin: 30px;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            background-color: transparent;
+            border-radius: 8px;
+        }
         li.techstack {
-                float: left;
-        display: block;
-        color: orangered;
-        text-align: center;
-        margin-right: 5px;
-        margin-bottom: 2px;
-        border-radius: 8px;
-        padding: 8px;
-        border: 1px solid orangered;
-        text-decoration: none;
+            color: orangered;
+            text-align: center;
+            padding: 8px;
+            border: 1px solid orangered;
+            border-radius: 8px;
+            text-decoration: none;
         }
 
         li.techstack:hover {
@@ -216,6 +237,38 @@
         div.projectmain div.projects:hover p {
             color: white;
         }
+
+        h1 {
+
+            font-size: clamp(1.5rem, calc(1.4rem + 0.5vw), 2rem);
+
+        }
+
+
+        /* Responsive design for smaller screens */
+    @media (max-width: 600px) {
+
+    div.mycontent div.about,
+
+    div.mycontent div.experience {
+
+        width: 100%;
+
+        float: none;
+
+        box-sizing: border-box;
+
+    }
+
+    div.mycontent div.experience {
+
+        margin-left: 0;
+
+        margin-top: 10px;
+
+    }
+
+    }
 
       
 
